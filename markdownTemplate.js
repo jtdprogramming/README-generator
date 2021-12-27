@@ -2,10 +2,15 @@
 function markdownTemplate(answers) {
   // push user answers into markdown template
   return `# ${answers.title}
-
+  
   ## Description
   ${answers.description}
   * * *
+  ### License
+  Click the badge for additional information about our license
+  [![License:${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
+  * * *
+  
   ## Table of Contents 
   - [Description](#description)
   - [Usage](#usage)
@@ -17,15 +22,9 @@ function markdownTemplate(answers) {
   * * *
 
   ### Usage
-  \`\`\`
   ${answers.usage}
-  \`\`\`
   * * *
 
-  ### License
-  Click the badge for additional information about our license
-  [![License:${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
-  * * *
 
   ### Installation 
   Enter the following in the command line to install ${answers.title}:
