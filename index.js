@@ -44,13 +44,18 @@ const questions = [
   },
   {
     type: "input",
+    name: "install",
+    message: "Please enter the installation command "
+  }
+  {
+    type: "input",
     name: "test",
-    message: "Please enter the 'Test' command ",
+    message: "Please enter the test command ",
   },
   {
     type: "input",
     name: "contributors",
-    message: "Please enter the names of contributing parties",
+    message: "Please enter the name of any contributing parties ",
   },
   {
     type: "input",

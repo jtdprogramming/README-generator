@@ -2,22 +2,42 @@
 
 function markdownTemplate(answers) {
   // title
+  return `# ${answers.title}
 
-  // table of contents
+  ## Description
+  ${answers.description}
+  * * *
+  ## Table of Contents 
+  - [Name](#name)
+  - [License](#license)
+  - [Description](#description)
+  - [Installation](#install)
+  - [Test](#test)
+  - [GitHub](#gitHub)
+  - [Email](#email)
+  - [Contributing Authors](#contributors)
+  * * *
 
-  // installation
+  ## License
+  [![License:${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
+  
 
-  // use
+  ## Installation 
+  Type the following command to install the application: ${answers.install}
 
-  // test
+  ## Test
+  To test the program enter the following command in the terminal ${answers.test} 
+  * * *
 
-  // license
-
-  // contributors
-
-  // questions/contact/github
-
-}
+  ## Questions
+  If you have any question please feel free to email me at ${answers.email}
+  
+  Check out more project on my Github at https://github.com/${answers.gitHub}
+  
+  ## Contributing Authors
+  ${answers.contributors}
+  `
+  };
 
 // reference: https://www.tutorialsteacher.com/nodejs/nodejs-module-exports
 
