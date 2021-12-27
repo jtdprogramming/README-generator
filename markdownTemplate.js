@@ -1,5 +1,4 @@
 // function to generate README markdown
-
 function markdownTemplate(answers) {
   // push user answers into markdown template
   return `# ${answers.title}
