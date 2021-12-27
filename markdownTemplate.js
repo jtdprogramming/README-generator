@@ -2,42 +2,44 @@
 
 function markdownTemplate(answers) {
   // push user answers into markdown template
-  return `#Project: ${answers.title}
+  return `# ${answers.title}
 
   ## Description
   ${answers.description}
   * * *
   ## Table of Contents 
-  - [Project](#project)
   - [License](#license)
   - [Description](#description)
-  - [Installation](#install)
-  - [Test](#test)
+  - [Installation](#installation)
+  - [Testing](#testing)
   - [Questions](#questions)
-  - [GitHub](#gitHub)
-  - [Email](#email)
-  - [Contributing](#contributors)
+  - [Contributing](#contributing)
   * * *
 
-  ## License
+  ### License
+  Click the badge for additional information about our license
   [![License:${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
   * * *
 
-  ## Installation 
-  Enter the following in the command line to install the application:
-  \`\`\`${answers.install}\`\`\`
+  ### Installation 
+  Enter the following in the command line to install: ${answers.title}:
+  \`\`\`
+  ${answers.install}
+  \`\`\`
   * * *
-  ## Test
-  Enter the following in the command line to test the application:
-  \`\`\` ${answers.test} \`\`\`
+  ## Testing
+  Enter the following in the command line to test: ${answers.title}:
+  \`\`\`
+  ${answers.test} 
+  \`\`\`
   * * *
 
-  ## Questions
-  If you have any question I can be reached at ${answers.email}
+  ### Questions
+  If you have any questions or comments, please contact ${answers.email}
   
   To see more of my work visit my Github at https://github.com/${answers.gitHub}
   * * *
-  ## Contributing
+  ### Contributing
   ${answers.contributors}
   `
   };
