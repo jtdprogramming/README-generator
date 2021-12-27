@@ -5,7 +5,7 @@ Screenshot Coming Soon!
 * * *
 
 ## Purpose
-Using the Node.js library Inquirer to rapidly generate a professional and fully functional README.md via user input from the terminal.
+Utilize the Node.js library Inquirer to rapidly generate a professional and fully functional README.md via user input from the terminal.
 * * *
 
 ## Built With
@@ -31,3 +31,9 @@ Using the Node.js library Inquirer to rapidly generate a professional and fully 
 
 ## Contributors
 [James](https://github.com/jtdprogramming) 
+
+## Resources
+- https://www.npmjs.com/package/inquirer 
+- https://nodejs.org/dist/latest-v12.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback
+- https://nodejs.org/api/path.html
+- https://www.tutorialsteacher.com/nodejs/nodejs-module-exports

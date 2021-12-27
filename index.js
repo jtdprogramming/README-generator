@@ -16,22 +16,23 @@ const markdownTemplate = require('./markdownTemplate');
 
 // user questions array
 const questions = [
-  //Project title
+  // title
   {
     type: "input",
     name: "title",
     message: "Please enter the title of your project ",
   },
-  //Project description
+  // description
   {
     type: "input",
     name: "description",
     message: "Please enter a brief description of your project: ",
   },
+  // license
   {
     type: "list",
     name: "license",
-    message: "Please select a license",
+    message: "Please select a license to include ",
     choices: [
       new inquirer.Separator(),
       "MIT",
@@ -42,26 +43,31 @@ const questions = [
       new inquirer.Separator(),
     ],
   },
+  // installation
   {
     type: "input",
     name: "install",
-    message: "Please enter the installation command "
-  }
+    message: "Please enter the installation command ",
+  },
+  // testing
   {
     type: "input",
     name: "test",
     message: "Please enter the test command ",
   },
+  // contributors
   {
     type: "input",
     name: "contributors",
-    message: "Please enter the name of any contributing parties ",
+    message: "Please enter instructions on how to contribute to this project ",
   },
+  // GitHub
   {
     type: "input",
     name: "gitHub",
     message: "Please enter your GitHub username ",
   },
+  // email
   {
     type: "input",
     name: "email",
@@ -76,19 +82,16 @@ const questions = [
 function generateReadMe() {
   inquirer.prompt(questions).then((answers) => {
     writeReadMe(
-      "TEST_README.md", markdownTemplate({...answers,})
+      "GENERATED_README.md", markdownTemplate({...answers,})
     );
   });
 }
 
 // function to write README file into current directory
 // resources: https://nodejs.org/api/path.html
-
 function writeReadMe(name, data) {
   return fs.writeFileSync(path.join(process.cwd(), name), data);
 }
-
-
 
 // call function upon file init
 generateReadMe();
