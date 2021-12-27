@@ -8,12 +8,19 @@ function markdownTemplate(answers) {
   ${answers.description}
   * * *
   ## Table of Contents 
-  - [License](#license)
   - [Description](#description)
+  - [Usage](#usage)
+  - [License](#license)
   - [Installation](#installation)
   - [Testing](#testing)
   - [Questions](#questions)
   - [Contributing](#contributing)
+  * * *
+
+  ### Usage
+  \`\`\`
+  ${answers.usage}
+  \`\`\`
   * * *
 
   ### License
@@ -22,20 +29,21 @@ function markdownTemplate(answers) {
   * * *
 
   ### Installation 
-  Enter the following in the command line to install: ${answers.title}:
+  Enter the following in the command line to install ${answers.title}:
   \`\`\`
   ${answers.install}
   \`\`\`
   * * *
+  
   ## Testing
-  Enter the following in the command line to test: ${answers.title}:
+  Enter the following in the command line to test ${answers.title}:
   \`\`\`
   ${answers.test} 
   \`\`\`
   * * *
 
   ### Questions
-  If you have any questions or comments, please contact ${answers.email}
+  If you have any questions or comments, please contact the ${answers.title} team via e-mail: ${answers.email}
   
   To see more of my work visit my Github at https://github.com/${answers.gitHub}
   * * *

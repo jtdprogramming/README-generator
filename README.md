@@ -6,33 +6,33 @@ Screenshot Coming Soon!
 
 ## Purpose
 Utilize the Node.js library Inquirer to rapidly generate a professional and fully functional README.md via user input from the terminal.
-* * *
 
 ## Built With
 - Javascript
-- Using Node JS Inquirer Package
+- Node JS Inquirer Package
 * * *
 
 ## Application Goals
 ```
 - Generate high-quality, professional README.md
-- Include the following input-based generated content:
+- Include the following input-based modular content:
   Project Title
   Description
+  License type chosen from a list of options - include badge of selection
   Table of Contents
   Installation guide
+  Testing guide
   Usage guide
-  License type chosen from a list of options - include badge of selection
   Contributing Authors
   Questions/Contact/Github link
 
 ```
 * * *
 
-## Contributors
+### Contributors
 [James](https://github.com/jtdprogramming) 
 
-## Resources
+### Resources
 - https://www.npmjs.com/package/inquirer 
 - https://nodejs.org/dist/latest-v12.x/docs/api/fs.html#fs_fs_writefile_file_data_options_callback
 - https://nodejs.org/api/path.html
