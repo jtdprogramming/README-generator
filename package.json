@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "<!-- screencap of a sample generated readme here -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtdprogramming/README-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtdprogramming/README-generator/issues"
+  },
+  "homepage": "https://github.com/jtdprogramming/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
