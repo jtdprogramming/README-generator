@@ -1,7 +1,8 @@
 # The README.md Generator
 Project repository: [README-generator](https://github.com/jtdprogramming/README-generator)
+
+Video Demo: [DEMO](https://watch.screencastify.com/v/yH0pNDqNMLrdP3hLh3zD)
 <!-- screencap of a sample generated readme here -->
-Screenshot Coming Soon!
 * * *
 
 ## Purpose
